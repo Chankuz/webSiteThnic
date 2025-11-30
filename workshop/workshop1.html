@@ -1,0 +1,119 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>workshop</title>
+    <link rel="stylesheet" href="workshop1.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="heading">
+        <h1>ลงทะเบียนร้านค้า Workshop1</h1>
+        <p>กรุนากรอกข้อมูลให้ครบถ้วนเพื่อลงทะเบียนร้านค้าของคุณ</p>
+      </div>
+      <div class="formFrame">
+        <div class="subHeader">
+          <h2>ข้อมูลเจ้าของร้าน</h2>
+        </div>
+        <br />
+        <div class="inputWraper">
+          <label for="name">ชื่อ-นามสกุลเจ้าของร้าน:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="กรอกชื่อ-นามสกุล"
+            name="name"
+            required=""
+          /><br />
+        </div>
+
+        <label for="store">ชื่อร้าน:</label>
+        <input
+          type="text"
+          id="store"
+          placeholder="กรอกชื่อร้าน"
+          name="store"
+          required=""
+        /><br />
+
+        <label for="phone">เบอร์โทรศัพท์:</label>
+        <input
+          type="number"
+          id="phone"
+          placeholder="0XX-XXX-XXXX"
+          name="phone"
+          required=""
+        /><br />
+
+        <label for="detail">รายละเอียด:</label>
+        <input
+          type="text"
+          id="detail"
+          placeholder="กรอกรายละเอียดเพิ่มเติมเกี่ยวกับร้านค้าของคุณ"
+          name="detail"
+          required=""
+        /><br />
+
+        <h3>ประเภทร้านค้า</h3>
+        <label for="type">หมวดหมู่:</label>
+        <select id="type" name="type" required="">
+          <option value="food">อาหาร</option>
+          <option value="Shirt">เสื้อผ้า</option>
+          <option value="Elect">อิเล็กทรอนิกส์</option>
+          <option value="All">ขายได้ทุกอย่าง</option>
+        </select>
+        <p>การใช้ไฟฟ้า(Electricity)</p>
+        <input
+          type="radio"
+          id="use Electricity"
+          name="Electricity"
+          value="use"
+        />
+        <label for="use Electricity">ต้องการใช้ไฟฟ้า</label><br />
+        <input
+          type="radio"
+          id="Not use Electricity"
+          name="Electricity"
+          value="not use"
+        />
+        <label for="Not use Electricity">ไม่ต้องการใช้ไฟฟ้า</label><br />
+
+        <h4>อุปกรณ์เสริมที่ต้องการให้เช่า</h4>
+        <label for="table">โต๊ะ(จำนวน)</label>
+        <input
+          type="text"
+          id="table"
+          placeholder="ระบุจำนวนโต๊ะที่ต้องการ"
+          name="table"
+        /><br />
+        <label for="chair">เก้าอี้(จำนวน)</label>
+        <input
+          type="text"
+          id="chair"
+          placeholder="ระบุจำนวนเก้าอี้ที่ต้องการ"
+          name="chair"
+        /><br />
+        <p>ร่ม/เต็นท์</p>
+        <input type="radio" id="use tent" name="Tent" value="use tent" />
+        <label for="">ต้องการ</label><br />
+        <input
+          type="radio"
+          id="not use tent"
+          name="Tent"
+          value="not use tent"
+        />
+        <label for="not use tent">ไม่ต้องการ</label><br />
+
+        <input type="checkbox" id="bath" name="bath" value="use" />
+        <label for="bath">อ่างล้างจาน/ก็อกน้ำ(สำหรับร้านอาอาร)</label><br />
+
+        <h5>ช่องทางโปรโมทร้านค้า</h5>
+        <label for="inbox">Social Media/เว็บไซต์</label>
+        <input type="text" id="inbox" name="inbox" /><br />
+
+        <input type="submit" value="Submit" />
+        <input type="reset" value="Reset" />
+      </div>
+    </form>
+  </body>
+</html>

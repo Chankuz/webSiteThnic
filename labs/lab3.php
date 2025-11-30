@@ -7,8 +7,8 @@
 </head>
 <body>
     <?php
-    $name = "John";
-    echo "Hellddsaaso $name"
+        $id = 1;
+        echo "id : $id"
     ?>
 </body>
 </html>
